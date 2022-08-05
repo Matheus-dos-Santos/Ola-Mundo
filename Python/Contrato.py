@@ -7,21 +7,21 @@ Profissão: Estudante
 Linguagem preferida: Python
 ------------------------------------------------- ---------------------------------------------------------
 | Estudante da computação, estou em busca de estágio e mais experiência no mercado de trabalho,           |
-| gosto de aprender coisas novas e aprimorar minhas habilidades.                                          |
-| gosto de: TI, programação, programação e jogos. Atualmente estudando mais Back-End: Python              |
-------------------------------------------------- ---------------------------------------------------------
-Contratar? [Sim|Não]""").upper()
+| gosto de aprender coisas novas e aprimorar minhas habilidades                                           |
+| gosto de: TI, programação e jogos. Atualmente estudando mais Back-End: Python                           |
+-----------------------------------------------------------------------------------------------------------
+Contratar? [Sim|Não]:\n""").upper()
 
-if contrato == "SIM":
-    print("Meus Parabéns pelo novo funcionário incrível!!!")
-
-else:
-    print("Usuários... \n"
-        "Esbarrou o dedo no botão errado? tente de novo...")
-    contrato  =  input ( "Contratar? [Sim|Não]" ).upper()
-    if  contrato  ==  "SIM":
-        print ( "Que bom que acertou desta vez! \n "
-            "Meus Parabéns pelo novo funcionário incrível!!!" )
+while contrato == "Sim" or "Não".upper():
+    if contrato == "SIM":
+        print("Meus Parabéns pelo novo funcionário incrível!!!")
+        break
     else:
-        print ( "Ok. \n "
-            "Deus Abençoe!")
+        print("""Usuários...\nEsbarrou o dedo no botão errado? tente de novo...""")
+        contrato = input ( "Contratar? [Sim|Não]" ).upper()
+        if contrato == "SIM":
+            print("""Que bom que acertou desta vez!
+                Meus Parabéns pelo novo funcionário incrível!!!""")
+        else:
+            print("""Ok. \nDeus Abençoe!""")
+            break
