@@ -1,4 +1,4 @@
-# Contrato - Linkedin (SOBRE)
+# Linkedin (SOBRE)
 contrato = input("""Nome: Matheus dos Santos Ferreira
 Religião: Cristão
 Idade: 20 anos 
@@ -13,15 +13,14 @@ Linguagem preferida: Python
 Contratar? [Sim|Não]:\n""").upper()
 
 while contrato == "Sim" or "Não".upper():
-    if contrato == "SIM":
+    if contrato == "Sim":
         print("Meus Parabéns pelo novo funcionário incrível!!!")
         break
     else:
-        print("""Usuários...\nEsbarrou o dedo no botão errado? tente de novo...""")
-        contrato = input ( "Contratar? [Sim|Não]" ).upper()
-        if contrato == "SIM":
-            print("""Que bom que acertou desta vez!
-                Meus Parabéns pelo novo funcionário incrível!!!""")
+        print("Usuários...\nEsbarrou o dedo no botão errado? tente de novo...")
+        contrato = input("Contratar? [Sim|Não]").upper()
+        if contrato == "Sim":
+            print("Que bom que acertou desta vez! \nMeus Parabéns pelo novo funcionário incrível!")
         else:
-            print("""Ok. \nDeus Abençoe!""")
+            print("Ok. \nDeus Abençoe!")
             break
