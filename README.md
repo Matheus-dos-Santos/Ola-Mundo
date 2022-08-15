@@ -1,3 +1,4 @@
 # olá mundo
- ## Primeiro repositório criado no GitHub
- ### Python studying
+<b> Primeiro repositório criado no GitHub </b>
+ - Python studying
+ - Automation
